@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE texte [
+<!ENTITY pbarre-pre "<choice><abbr>&#58981;</abbr><expan>pre</expan></choice>" >
+<!ENTITY atilde-an "<choice><abbr>&#227;</abbr><expan>an</expan></choice>" >
+<!ENTITY otilde-on "<choice><abbr>&#245;</abbr><expan>on</expan></choice>" >
+<!ENTITY eexposant-er "<choice><abbr>&#868;</abbr><expan>er</expan></choice>" >
+<!ENTITY eexposant-re "<choice><abbr>&#868;</abbr><expan>re</expan></choice>" >
+<!ENTITY etilde-en "<choice><abbr>&#7869;</abbr><expan>en</expan></choice>" >
+<!ENTITY etabrégé-et "<choice><abbr>&#42859;</abbr><expan>et</expan></choice>" >
+<!ENTITY uchange-v "<choice><orig>u</orig><reg>v</reg></choice>" >
+<!ENTITY ichange-j "<choice><orig>i</orig><reg>j</reg></choice>" >
+<!ENTITY echange-é "<choice><orig>e</orig><reg>é</reg></choice>" >
+<!ENTITY Ichange-J "<choice><orig>I</orig><reg>J</reg></choice>" >
+]>
+<?xml-model href="./out/ODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="./out/ODD.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt xml:lang="fr">
+            <title>Recueil de textes, Vie de Saints</title>
+         </titleStmt>
+         <publicationStmt xml:lang="fr"><p>Edition encodée par Claire Jahan, d'après Recueil de
+            textes, Vie de Saints, un manuscrit édité dans les années <date when="1285">1285</date>.
+            Encodage à partir du folio 228v jusqu'au folio 229v.</p></publicationStmt>
+         <sourceDesc>
+            <msDesc xml:lang="fr">
+               <msIdentifier source="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc50522d">
+                  <country ref="#France">France</country>
+                  <region ref="#Ile-de-France">Ile-de-France</region>
+                  <settlement ref="#Paris">Paris</settlement>
+                  <institution ref="#BNF">Bibliothèque nationale de France</institution>
+                  <repository ref="#Département_Manuscrits">Département des Manuscrits</repository>
+                  <idno type="actuel">Français 412</idno>
+                  <altIdentifier type="anterieur">
+                     <idno>Lancelot 135</idno>
+                     <note>Terme "Lancelot" indiqué sur le recto de la page de garde du
+                        manuscrit</note>
+                  </altIdentifier>
+                  <altIdentifier type="anterieur">
+                     <idno>Regius 7019(3)</idno>
+                     <note>Indiqué sur le recto de la page de garde du manuscrit</note>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem source="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc50522d/cd0e77"
+                     xml:id="Calendrier_lat">
+                     <author xml:lang="fr">Inconnu</author>
+                     <title xml:lang="fr">Calendrier en latin, comprenant le "Compost"</title>
+                     <textLang mainLang="la">Latin</textLang>
+                     <note>Le Compost commence par : <quote xml:lang="fro">Ca se traie qui veut
+                           aprendre Dou Compost coment il doit prendre"</quote></note>
+                  </msItem>
+                  <msItem source="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc50522d/cd0e94"
+                     xml:id="Legendes_saints">
+                     <author xml:lang="fr">Inconnu</author>
+                     <title xml:lang="fr">Légendes de saints</title>
+                     <incipit xml:lang="fro">Li commence li escris de <persName ref="#Saint-Pierre"
+                           >seint piere</persName></incipit>
+                     <textLang mainLang="fro">Ancien français</textLang>
+                  </msItem>
+                  <msItem source="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc50522d/cd0e111"
+                     xml:id="Bestiaire">
+                     <!-- folio 228r -->
+                     <author xml:lang="fro" ref="#Richard_de_Fournival">Mestre Richart</author>
+                     <title xml:lang="fro">Li Bestiaires ou Arriere ban</title>
+                     <incipit xml:lang="fro">Toutes gens desirrent par nature a savoir</incipit>
+                     <textLang mainLang="fro">Ancien français</textLang>
+                  </msItem>
+                  <msItem source="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc50522d/cd0e128"
+                     xml:id="Reponse_bestiaire">
+                     <!-- folio 236v -->
+                     <author xml:lang="fro" ref="#Richard_de_Fournival">Maistre Richart de
+                        Furnival</author>
+                     <title xml:lang="fro">La response sour larriere ban</title>
+                     <incipit xml:lang="fro">Ici endroit comence li prologues a la response sous
+                        larriere ban maistre <persName ref="#Richard_de_Fournival">Richart de
+                           furnival</persName></incipit>
+                     <textLang mainLang="fro">Ancien français</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc source="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc50522d"
+                        material="Parchemin">
+                        <support>Parchemin de type vélin.</support>
+                        <foliation>A la main au crayon de papier, par un scripteur postérieur à
+                           l'écriture du manuscrit. Numérotation des feuillets.</foliation>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="2">
+                           <p>Avec deux colonnes.</p>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc><p>Plus d'une main repérée : ajout postérieur des numéros de folio au
+                     crayon papier</p></handDesc>
+                  <decoDesc><p>Avec plusieurs capitales et lettrines colorées. Avec des enluminures
+                     rappelant le texte.</p></decoDesc>
+               </physDesc>
+               <history source="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc50522d">
+                  <origin>Ecrit autour de <origDate when="1285">1285</origDate></origin>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc xml:lang="fr"><!-- Bien -->
+         <editorialDecl>
+            <normalization><p>Le choix a été fait de correspondre au manuscrit le plus précisément
+               possible. Pour ce faire, les minuscules et majuscules des lettres "u" et "i" ont été
+               conservées malgré leur emploi pour une autre lettre, respectivement le "v" et le "j".
+               Pour marquer cela dans l'encodage, la balise "choice" a été utilisée avec "orig" et
+               "reg". Cela nous permet de rendre la version originale et la version revue. Selon le
+               même principe, des accents aigus ont été ajoutés sur des "e" qui dans des balises de
+               régularisation lorsque le verbe est confondable avec le nom commun. Selon le même
+               principe, les abbréviations ont été conservées par le biais de la même balise et de
+               ses enfants "abbr" et "expan". En ce qui concerne ces abréviations, nous avons le
+               cas du "p" barré, qui donne un "pre", un "a" avec qui donne "an", de même qu'un "o"
+               avec tilde qui donne "on", un "e" en exposant qui se restitue par "er" ou "re", un
+               "e" avec tilde pour "en", ainsi qu'un "et" abrégé par un "et" tironnien.</p></normalization>
+            <punctuation> <p>Tous les signes de ponctuation du texte médiéval ont été conservés.</p>
+            </punctuation>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+   <facsimile source="https://gallica.bnf.fr/ark:/12148/btv1b84259980/f1.item">
+      <surface source="https://gallica.bnf.fr/ark:/12148/btv1b84259980/f466.item">
+         <graphic url="466.jpeg" width="1024px" height="1525px"/>
+         <zone xml:id="n466" ulx="27" uly="41" lrx="1001" lry="1437" type="page_entière"/>
+         <zone xml:id="paragraphe1" ulx="620" uly="714" lrx="970" lry="898" type="écrits"/>
+         <zone xml:id="image1" ulx="643" uly="901" lrx="965" lry="1095" type="enluminure"/>
+         <zone xml:id="paragraphe2" ulx="639" uly="1097" lrx="969" lry="1170" type="écrit"/>
+      </surface>
+      <surface source="https://gallica.bnf.fr/ark:/12148/btv1b84259980/f467.item">
+         <graphic url="467.jpeg" width="1024px" height="1540px"/>
+         <zone xml:id="n467" ulx="30" uly="53" lrx="972" lry="1462" type="page_entière"/>
+         <zone xml:id="ajout1" ulx="838" uly="100" lrx="937" lry="158" type="écrits"/>
+         <zone xml:id="paragraphe3" ulx="75" uly="118" lrx="403" lry="343" type="écrits"/>
+         <zone xml:id="paragraphe4" ulx="59" uly="336" lrx="395" lry="517" type="écrits"/>
+         <zone xml:id="image2" ulx="68" uly="580" lrx="294" lry="773" type="enluminure"/>
+         <zone xml:id="paragraphe5" ulx="58" uly="509" lrx="392" lry="903" type="écrits"/>
+         <zone xml:id="image3" ulx="76" uly="991" lrx="298" lry="1180" type="enluminure"/>
+         <zone xml:id="paragraphe6" ulx="55" uly="903" lrx="388" lry="1169" type="écrits"/>
+         <zone xml:id="paragraphe7" ulx="442" uly="132" lrx="757" lry="585" type="écrits"/>
+         <zone xml:id="image4" ulx="441" uly="664" lrx="655" lry="835" type="enluminure"/>
+         <zone xml:id="paragraphe8" ulx="436" uly="584" lrx="763" lry="882" type="écrits"/>
+         <zone xml:id="image5" ulx="440" uly="993" lrx="653" lry="1172" type="enluminure"/>
+         <zone xml:id="paragraphe9" ulx="437" uly="885" lrx="754" lry="1164" type="écrits"/>
+      </surface>
+      <surface source="https://gallica.bnf.fr/ark:/12148/btv1b84259980/f468.item">
+         <graphic url="468.jpeg" width="1024px" height="1529px"/>
+         <zone xml:id="n468" ulx="49" uly="67" lrx="999" lry="1441" type="page_entière"/>
+         <zone xml:id="paragraphe10" ulx="276" uly="111" lrx="598" lry="263" type="écrits"/>
+         <zone xml:id="paragraphe11" ulx="272" uly="270" lrx="597" lry="436" type="écrits"/>
+         <zone xml:id="paragraphe12" ulx="273" uly="439" lrx="607" lry="656" type="écrits"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:lang="fro" decls="#Bestiaire" type="item">
+            <div n="466" facs="#n466" type="page">
+               <p n="1" facs="#paragraphe1"><lb/>La nature del leu si est tele qe<lb/> qant uns hom
+                  le &uchange-v;oit a&uchange-v;ant<lb/> que il &uchange-v;oie lome : li leus em
+                  pert to<lb break="no"/>te sa force &etabrégé-et; son hardiment. Et se li<lb/> leus
+                  &uchange-v;oit lome premerains. li hom en<lb/> pert sa &uchange-v;oiz si qe il ne
+                  puet mot dire.</p>
+               <figure n="1" facs="#image1"/>
+               <p n="2" facs="#paragraphe2"><lb/>Ceste nature est tro&uchange-v;ee en amor<lb/> dome
+                  &etabrégé-et; de feme. Car qant il a<lb/> amor entriaus deus : se li hom puet</p>
+            </div>
+            <div n="467" facs="#n467" type="page">
+               <p n="3" facs="#ajout1">
+                  <add type="posterieur">229</add>
+               </p>
+               <p n="4" facs="#paragraphe3"><pb/><lb/>Perce&uchange-v;oir par la feme Meisme
+                     preme<lb break="no"/>rains quele laine &etabrégé-et; quil sace tant quil<lb/>
+                  li face conoistre : Elle apuis perdu le har<lb break="no"/>dement descondire. Mais
+                  por cou que &ichange-j;e<lb/> ne me peut tenir. ne sosfrir de &uchange-v;os
+                  dire<lb/> mon corage : ancois qe &ichange-j;e seusse riens<lb/> del
+                  &uchange-v;ostre ma&uchange-v;ez &uchange-v;os escondit : cou &uchange-v;oz<lb/>
+                  ai oit dire aucune foiz.</p>
+               <p n="5" facs="#paragraphe4"><lb/>Et puis que &ichange-j;e fui premerains
+                     &uchange-v;e<lb break="no"/>us solonc la nature del leu. &Ichange-J;e<lb/> doi
+                  bien perdre la &uchange-v;oiz. Cest une rais&otilde-on;s<lb/> por quoi cis escris
+                  nest mie fais en ch&atilde-an;<lb break="no"/>tant mes en contant. Et une au<lb
+                     break="no"/>tre raisson de cou meisme. si est prisse<lb/> en la nature del
+                  crisnon : dont &ichange-j;e me<lb/> sui molt pris garde.</p>
+               <figure n="2" facs="#image2"/>
+               <p n="6" facs="#paragraphe5"><lb/>Car la nature si est tele. que li che<lb break="no"
+                  />tis sentent tant a chanter qa<lb/> se muert en chantant : tant en pert<lb/> le
+                  mengier.<lb/> &etabrégé-et; tant sen<lb/> lait a pour<lb break="no"/>chacier.
+                  Et<lb/> por ce me<lb/> sui &ichange-j;e pris<lb/> garde que<lb/> li chanters<lb/>
+                  ma si poi<lb/> valu : que &ichange-j;e mi peusse bien tant fier.<lb/> que
+                  &ichange-j;ou iperdisse neis moi. si que li<lb/> chanters ne mi secorust.
+                  Noumee<!-- men abbrégé avec m avec tilde -->t<lb/> acou que &ichange-j;ou
+                  espro&uchange-v;ai : que aleure<lb/> qe &ichange-j;e mius chantai. &etabrégé-et;
+                  que &ichange-j;e miols dis<lb/> en chantant : adont me fu il pis.</p>
+               <figure n="3" facs="#image3"/>
+               <p n="7" facs="#paragraphe6"><lb/>Aussi come del cisne. qe il est .i.<lb/> pais la ou
+                  li cisne chantent.<lb/> si bien &etabrégé-et; si &uchange-v;olentiers que qant on
+                     har<lb break="no"/>pe de&uchange-v;ant aus : il sacordent a la harpe.<lb/> tout
+                  en<lb/> autel ma<lb break="no"/>niere com<lb/> li tambuis au flaiol.<lb/>
+                  &etabrégé-et; noume<lb break="no"/>ement en<lb/> lan quil</p>
+               <p n="8" facs="#paragraphe7"><cb/><lb/>Doit morir. Si que on dist Que
+                  q&atilde-an;t<lb/> on en &uchange-v;oit .i. bien chantant cil morra<lb/> auvan
+                  &etabrégé-et; tout aussi com dun enfant.<lb/> que quant on le true&uchange-v;e de
+                  bon engien<lb/> si dist on : il ne &uchange-v;i&uchange-v;era mie longement.<lb/>
+                  Et por ce di &ichange-j;ou por le poor que &ichange-j;e oi de la<lb/> mort au
+                  cisne qant &ichange-j;e chantai miols<lb/> &etabrégé-et; de la mort au crisnon
+                  quant &ichange-j;e le<lb/> fis plus &uchange-v;olentiers. Por ce laissai
+                  &ichange-j;e<lb/> le chanter a cest arriere ban faire &etabrégé-et;<lb/> le
+                  &uchange-v;ous en&uchange-v;oiai en maniere de con<lb break="no"/>tre escrit. Car
+                  tres dont deusse &ichange-j;e bien<lb/> a&uchange-v;oir perdu la &uchange-v;oiz
+                  que li leus me &uchange-v;it<lb/> premiers : Ce est a dire qe &ichange-j;e
+                  reconuc<lb/> que &ichange-j;e &uchange-v;os amoie. de&uchange-v;ant cou que<lb/>
+                  &ichange-j;e seusse aquel chief &ichange-j;en peusse &uchange-v;e<lb break="no"
+                  />nir. Las &etabrégé-et; si me sui tant repentis<lb/> de cou que &ichange-j;e
+                  &uchange-v;os a&uchange-v;oie proi&echange-é; por
+                  &uchange-v;ost&eexposant-re;<lb/> douce compaignie perdre.</p>
+               <figure n="4" facs="#image4"/>
+               <p n="9" facs="#paragraphe8"><lb/>Car se &ichange-j;ou peusse faire aussi co<lb
+                     break="no"/>me li chiens. qi est de teil na<lb break="no"/>ture. qe qant il a
+                  vomit si repaire<lb/> a son vomitte. &etabrégé-et; le remengue de re<lb break="no"
+                  />chief. Jou e<lb break="no"/>usse &uchange-v;olen<lb/>tiers ma pro<lb break="no"
+                  />iere renglo<lb break="no"/>tie cent fois<lb/> puis quele<lb/> me fu
+                  &uchange-v;olee<lb/> des dens. &etabrégé-et;<lb/> ne &uchange-v;ous
+                  mer&uchange-v;eilli&echange-é;s pas : se &ichange-j;ai lamor<lb/> comparee a la
+                  nature del leu.</p>
+               <figure n="5" facs="#image5"/>
+               <p n="10" facs="#paragraphe9"><lb/>Car encore ali leus molt dau<lb break="no"/>tres
+                  natures. Li une est que<lb/> il ale col si roit quil ne le puet fle<lb break="no"
+                  />chir : sil ne torne tout son cors en<lb break="no"/>samble. &etabrégé-et; lautre
+                  nature si est quil<lb/> ne prendra<lb/> la proie pres<lb/> de sa
+                     lo&uchange-v;ie<lb break="no"/>re. Et la ter<lb break="no"/>ce si est qe<lb/>
+                  sil entre en<lb/> un biercil<lb/> il i entre al</p>
+            </div>
+            <div n="468" facs="#n468" type="page">
+               <p n="11" facs="#paragraphe10"><pb/><lb/>Plus coiement qe il puet. Et sil
+                  a&uchange-v;i&etilde-en;t<lb/> que aucuns rainsceaus brise desoz ces<lb break="no"
+                  />piez qui noise face. il sen venge ason<lb/> piet meismes &etabrégé-et; le mort
+                  mout angois<lb break="no"/>seusement.</p>
+               <p n="12" facs="#paragraphe11"><lb/>Totes ces .iii. natures sont trou<lb break="no"
+                  />&uchange-v;ees en amor de feme. car ele ne se<lb/> puet doner se tout ensamble
+                  non. Cest<lb/> solonc la premiere nature &etabrégé-et; solonc la se<lb break="no"
+                  />conde : sil est qe sil a&uchange-v;ient qele aint<lb/> .i. home : qant il ert
+                  loing de li : si la<lb break="no"/>mera trop durement. &etabrégé-et; qant il
+                  ert<lb/> pri&echange-é;s si nen fera la nul semblant.</p>
+               <p n="13" facs="#paragraphe12"><lb/>Et solonc la tierce nature si est<lb/> que sele
+                  &uchange-v;a si a&uchange-v;ant de parole<lb/> qe li hom se perco&uchange-v;ie
+                  qele laint. Tout<lb/> aussi come li leus se &uchange-v;enge par la bou<lb
+                     break="no"/>che de son pie de trop bien ramonceler<lb/> par force de parole
+                  &etabrégé-et; racourir ce qele<lb/> a trop a&uchange-v;ant ale. Car
+                  &uchange-v;olentiers &uchange-v;eut<lb/> sa&uchange-v;oir dautrui. ce qele ne
+                  &uchange-v;iut mie<lb/> con sace de li : &etabrégé-et; dome qele ne cuide mie<lb/>
+                  qil laint le &uchange-v;iut ele fermement gard&eexposant-er;.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+   <standOff>
+      <listPlace>
+         <!--Les types auraient aussi pu être transformés en sous-listes -->
+         <place xml:id="Amiens" type="ville">
+            <placeName>Amiens</placeName>
+         </place>
+         <place xml:id="France" type="pays">
+            <placeName>France</placeName>
+         </place>
+         <place xml:id="Ile-de-France" type="region">
+            <placeName>Ile-de-France</placeName>
+         </place>
+         <place xml:id="Paris" type="ville">
+            <placeName>Paris</placeName>
+         </place>
+         <place xml:id="BNF" type="institution">
+            <placeName>Bibliothèque nationale de France</placeName>
+         </place>
+         <place xml:id="Département_Manuscrits" type="service">
+            <placeName>Département des Manuscrits</placeName>
+         </place>
+      </listPlace>
+      <listPerson>
+         <person xml:id="Richard_de_Fournival"
+            source="https://data.bnf.fr/fr/12061852/richard_de_fournival/" sex="masculin">
+            <persName>
+               <name type="standard" full="yes">
+                  <forename xml:lang="fre">Richard</forename>
+                  <nameLink xml:lang="fre">de</nameLink>
+                  <surname xml:lang="fre">Fournival</surname>
+               </name>
+               <addName xml:lang="fro" type="autre_orthographe" full="yes">Richart de
+                  Fornival</addName>
+               <addName xml:lang="lat" type="autre_orthographe" full="yes">Richardus de
+                  Furnivalle</addName>
+               <addName xml:lang="fre" type="autre_orthographe" full="yes">Richart de
+                  Fournival</addName>
+               <addName xml:lang="fro" type="autre_orthographe" full="yes">Richart de
+                  Fornival</addName>
+            </persName>
+            <birth when="1201">1201</birth>
+            <death when="1260">1260</death>
+            <occupation>Chanoine de la Cathédrale d'<placeName ref="#Amiens">Amiens</placeName> en
+                  <date when="1240">1240</date>. - Trouvère. - Auteur en ancien français et en
+               latin, dont un traité d'alchimie et d'ouvrages didactiques</occupation>
+         </person>
+         <person xml:id="Saint-Pierre" source="https://fr.wikipedia.org/wiki/Saint_Pierre"
+            sex="masculin">
+            <persName>
+               <name type="standard">Saint-Pierre</name>
+               <addName type="autre">Pierre l'Apôtre</addName>
+               <addName type="autre">Prince des Apôtres</addName>
+            </persName>
+         </person>
+      </listPerson>
+   </standOff>
+</TEI>
