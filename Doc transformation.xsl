@@ -14,7 +14,7 @@
     </xsl:variable>
     
     <xsl:template match="TEI">
-        <xsl:result-document href="/home/tnah/Bureau/Devoir%20XSLT/HTML/accueil.html"
+        <xsl:result-document href="./accueil.html"
             method="html" indent="yes">
             <html>
                 <xsl:value-of select="$head"/>
@@ -27,17 +27,21 @@
                     <xsl:apply-templates select="//normalization/p"/>
                 </div>
                 <div>
+                    <h2>Concernant la publication</h2>
+                    <xsl:apply-templates select="//publicationStmt"/>
+                </div>
+                <div>
                     <ul>
-                        <li><a href="{/facsimile/@source}">Lien vers le manuscrit</a></li>
-                        <li><a href="/home/tnah/Bureau/Devoir%20XSLT/HTML/facsimile.html">Transcription facsmiliaire</a></li>
-                        <li><a href="/home/tnah/Bureau/Devoir%20XSLT/HTML/normalise.html">Transcription normalisée</a></li>
-                        <li><a href="/home/tnah/Bureau/Devoir%20XSLT/HTML/info.html">Informations sur le manuscrit</a></li>
+                        <li><a href="{//facsimile/@source}">Lien vers le manuscrit</a></li>
+                        <li><a href="./facsimile.html">Transcription facsmiliaire</a></li>
+                        <li><a href="./normalise.html">Transcription normalisée</a></li>
+                        <li><a href="./info.html">Informations sur le manuscrit</a></li>
                     </ul>
                 </div>
             </body>
             </html>
         </xsl:result-document>
-        <xsl:result-document href="/home/tnah/Bureau/Devoir%20XSLT/HTML/facsimile.html"
+        <xsl:result-document href="./facsimile.html"
             method="html" indent="yes">
             <html>
                 <xsl:value-of select="$head"/>
@@ -55,17 +59,17 @@
                     </div>
                     <div>
                         <ul>
-                            <li><a href="/home/tnah/Bureau/Devoir%20XSLT/HTML/accueil.html">Accueil</a></li>
-                            <li><a href="{/facsimile/@source}">Lien vers le manuscrit</a></li> 
-                            <li><a href="/home/tnah/Bureau/Devoir%20XSLT/HTML/normalise.html">Transcription normalisée</a></li>
-                            <li><a href="/home/tnah/Bureau/Devoir%20XSLT/HTML/info.html">Informations sur le manuscrit</a></li>
+                            <li><a href="./accueil.html">Accueil</a></li>
+                            <li><a href="{//facsimile/@source}">Lien vers le manuscrit</a></li> 
+                            <li><a href="./normalise.html">Transcription normalisée</a></li>
+                            <li><a href="./info.html">Informations sur le manuscrit</a></li>
                         </ul>
                     </div>
                 </div>
                 </body>
             </html>
         </xsl:result-document>
-        <xsl:result-document href="/home/tnah/Bureau/Devoir%20XSLT/HTML/normalise.html"
+        <xsl:result-document href="./normalise.html"
             method="html" indent="yes">
             <html>
                 <xsl:value-of select="$head"/>
@@ -83,17 +87,17 @@
                     </div>
                     <div>
                         <ul>
-                            <li><a href="/home/tnah/Bureau/Devoir%20XSLT/HTML/accueil.html">Accueil</a></li>
-                            <li><a href="{/facsimile/@source}">Lien vers le manuscrit</a></li> 
-                            <li><a href="/home/tnah/Bureau/Devoir%20XSLT/HTML/facsimile.html">Transcription facsmiliaire</a></li>
-                            <li><a href="/home/tnah/Bureau/Devoir%20XSLT/HTML/info.html">Informations sur le manuscrit</a></li>
+                            <li><a href="./accueil.html">Accueil</a></li>
+                            <li><a href="{//facsimile/@source}">Lien vers le manuscrit</a></li> 
+                            <li><a href="./facsimile.html">Transcription facsmiliaire</a></li>
+                            <li><a href="./info.html">Informations sur le manuscrit</a></li>
                         </ul>
                     </div>
                 </div>
                 </body>
             </html>
         </xsl:result-document>
-        <xsl:result-document href="/home/tnah/Bureau/Devoir%20XSLT/HTML/info.html"
+        <xsl:result-document href="./info.html"
             method="html" indent="yes">
             <html>
                 <xsl:value-of select="$head"/>
@@ -110,13 +114,21 @@
                         <div>
                             <ul><xsl:call-template name="content"/></ul>
                         </div>
+                        <div>
+                            <h2>Informations complémentaires</h2>
+                            <p>Support : <xsl:value-of select="//support"/></p>
+                            <p>Foliation : <xsl:value-of select="//foliation"/></p>
+                            <p>Mise en page : <xsl:value-of select="//layout/p"/></p>
+                            <p>Informations concernant les mains : <xsl:value-of select="//handDesc/p"/></p>
+                            <p>Informations sur la décoration du document : <xsl:value-of select="//decoDesc/p"/></p>
+                        </div>
                         <a href="{//msIdentifier/@source}">Pour en savoir plus</a>
                         <div>
                             <ul>
-                                <li><a href="/home/tnah/Bureau/Devoir%20XSLT/HTML/accueil.html">Accueil</a></li>
-                                <li><a href="{/facsimile/@source}">Lien vers le manuscrit</a></li> 
-                                <li><a href="/home/tnah/Bureau/Devoir%20XSLT/HTML/facsimile.html">Transcription facsmiliaire</a></li>
-                                <li><a href="/home/tnah/Bureau/Devoir%20XSLT/HTML/normalise.html">Transcription normalisée</a></li>
+                                <li><a href="./accueil.html">Accueil</a></li>
+                                <li><a href="{//facsimile/@source}">Lien vers le manuscrit</a></li> 
+                                <li><a href="./facsimile.html">Transcription facsmiliaire</a></li>
+                                <li><a href="./normalise.html">Transcription normalisée</a></li>
                             </ul>
                         </div>
                     </div>
@@ -153,15 +165,6 @@
                 </ul>
             </li>
         </xsl:for-each>    
-    </xsl:template>
-    
-    <xsl:template match="//text//div">
-        <xsl:for-each select="./p">
-            
-            <xsl:if test="./@facs = concat('#', surface/zone/@xml:id)">
-                
-            </xsl:if>
-        </xsl:for-each>
     </xsl:template>
     
 </xsl:stylesheet>
